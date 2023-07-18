@@ -49,7 +49,7 @@ export default async () => {
 
     calculateCurrencyOnMainPage(watchedState, data);
 
-    elements.select.addEventListener('click', (e) => {
+    elements.select.addEventListener('change', (e) => {
         watchedState.currencyName = elements.select.value; // ??
         if (watchedState.currencyName === 'RUB') {
          watchedState.currencyValue = 1;
